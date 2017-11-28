@@ -36,7 +36,7 @@ Pleas be sure you have the requirements mentioned in the previous section instal
 
 We recommending forking this repository and using as a submodule. To use as a git submodule in your project, navigate to your containers directory and run:
 
-    git submodule add git@github.com:source4societyorg/react-subnav-link-container.git
+    git submodule add git@github.com:source4societyorg/react-subnav-link-container.git SubNavLinkContainer
 
 Replace the url with the url of your fork as needed.
 
