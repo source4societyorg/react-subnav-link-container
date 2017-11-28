@@ -26,6 +26,7 @@ Please be sure you have the following in your package.json:
       "redux-immutable": "4.0.0",
       "reselect": "3.0.1",
       "styled-components": "2.0.0",
+      "react-onclickoutside": "^6.7.0",    
       "warning": "3.0.0"
     }
 
