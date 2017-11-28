@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import injectReducer from 'utils/injectReducer';
@@ -9,6 +8,7 @@ import { createStructuredSelector } from 'reselect';
 import NavItem from 'components/Navigation/NavItem';
 import SubNav from 'components/Navigation/SubNav';
 import SubNavItem from 'components/Navigation/SubNavItem';
+import ImprovedLink from 'containers/ImprovedLink';
 import { makeSelectSubnavVisible } from './selectors';
 import { closeSubnav, toggleSubnav } from './actions';
 import reducer from './reducer';
@@ -27,9 +27,11 @@ export class SubNavLinkContainer extends React.PureComponent { // eslint-disable
     );
   }
 
-  renderSubNavItems(subnav, subnavKey) {
+  renderSubNavItems(subnav, subnavKey) {  
     return subnav.map((item) =>
-      <SubNavItem key={`${subnavKey}_subitem_${item.link}`} onClick={this.props.onClose}><Link to={item.link} >{item.title}</Link></SubNavItem>
+      <SubNavItem key={`${subnavKey}_subitem_${item.to}`} onClick={this.props.onClose}>
+        <ImprovedLink {...item}>{item.title}</ImprovedLink>
+      </SubNavItem>
     );
   }
 

@@ -30,6 +30,8 @@ Please be sure you have the following in your package.json:
       "warning": "3.0.0"
     }
 
+You will also need the ImprovedLink container available at [source4societyorg/react-improved-link](https://github.com/source4societyorg/react-improved-link)
+
 ## Installation
 
 Pleas be sure you have the requirements mentioned in the previous section installed.
